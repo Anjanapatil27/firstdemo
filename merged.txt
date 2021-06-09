@@ -1,0 +1,7 @@
+Hello World
+
+Content of file1
+
+Welcome to file 2
+
+Content of file2

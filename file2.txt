@@ -1,0 +1,3 @@
+Welcome to file 2
+
+Content of file2
