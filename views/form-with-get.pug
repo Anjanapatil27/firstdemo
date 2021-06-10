@@ -1,0 +1,11 @@
+extends base.pug
+block content 
+  div(class="row no-guttes")
+    div(clas ="col no-gutters")
+         form(action="/submit-form-with-get" enctype="multipart/form-data")
+            p First Input File:
+               input(type="file" class="container" name="first" id="firstfile" size="65" accept=".txt")
+            p Second Input File:
+               input(type="file" class="container" name="second" id="secondfile" size="65")
+            br    
+            input(type="submit" name="Done" id="submitbutton")
