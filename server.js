@@ -5,7 +5,7 @@ var app = express();
 
 app.set('view engine','pug');
 
-
+app.set('port',process.env.port||3000);
 app.get("/",function(request,response){
    return response.redirect('/form-with-get');
 });
@@ -35,7 +35,7 @@ app.get("/submit-form-with-get",function(request,response){
    return response.send('submit-form-with-get');
 });
 
-var server = app.listen(1337, function () {
+var server = app.listen(app.get('port'), function () {
    var host = server.address().address
    var port = server.address().port
    
